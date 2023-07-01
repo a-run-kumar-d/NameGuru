@@ -6,7 +6,7 @@
 }
 body {
   background: var(--05, #fcfdfe);
-  margin-bottom: 1rem;
+  overflow-x: hidden;
 }
 .top {
   margin-top: 3.83rem;
@@ -23,15 +23,29 @@ body {
   background-size: cover;
 }
 .menu {
-  margin-right: 4.25rem;
   width: 3.33333rem;
   height: 3.33333rem;
 }
+.ib {
+  height: fit-content;
+  width: fit-contents;
+  margin-right: 4.25rem;
+  border: none;
+  background-color: transparent;
+}
 .container1 {
   height: auto;
-  width: auto;
-  margin-left: 8.46rem;
+  width: 100%;
+  display: flex;
   margin-top: 5.21rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.container2 {
+  height: auto;
+  width: auto;
+  padding-left: 8.46rem;
+  margin-bottom: 1.7rem;
 }
 .tagline {
   color: var(--06, #e22f42);
@@ -115,7 +129,355 @@ body {
 .baby {
   width: 7.95833rem;
   height: 17.375rem;
-  position: absolute;
-  top: 27.2rem;
-  left: 88rem;
 }
+.menu_bar {
+  position: absolute;
+  top: 0%;
+  left: 75%;
+  height: 100%;
+  width: 25%;
+  background-color: #172651;
+  display: none;
+
+}
+.menu_items {
+  position: relative;
+  top: 4rem;
+  left: 2.92rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.62rem;
+}
+.set_bar {
+  display: flex;
+  flex-direction: row;
+}
+.back {
+  width: 2.08333rem;
+  height: 2.08333rem;
+}
+.settings {
+  color: #fff;
+  font-size: 1.36608rem;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  padding-left: 0.74rem;
+}
+#ib {
+  margin-right: 0;
+}
+.option_container {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.21rem;
+}
+.option {
+  display: flex;
+  flex-direction: row;
+  gap: 1.33rem;
+}
+.text {
+  color: #fff;
+  font-size: 1.08525rem;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#advanced {
+  margin-right: 0;
+}
+#darkmode {
+  margin-right: 0;
+}
+.checkbox {
+  width: 3.16667rem;
+  height: 1.425rem;
+}
+.adv {
+  margin-top: 2.12rem;
+  height: max-content;
+  width: max-content;
+  gap: 1.71rem;
+  display: flex;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.42rem;
+}
+.name1 {
+  color: var(--06, #e22f42);
+  font-size: 0.73004rem;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.box1 {
+  width: 7.79167rem;
+  height: 2.47913rem;
+  border-radius: 0.30417rem;
+  border: 1.825px solid #172651;
+  background: rgba(34, 38, 49, 0.2);
+  padding-left: 0.58rem;
+  padding-right: 0.58rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.txt {
+  width: 4.95833rem;
+  color: var(--06, #172651);
+  font-size: 0.73004rem;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#drop {
+  width: 0.8125rem;
+  height: 0.8125rem;
+}
+#dropdown {
+  margin-right: 0;
+}
+.box2 {
+  width: 7.79167rem;
+  height: 2.47913rem;
+  border-radius: 0.30417rem;
+  border: 1.825px solid #172651;
+  background: rgba(34, 38, 49, 0.2);
+  padding-left: 0.58rem;
+  padding-right: 0.58rem;
+  padding-top: 0.58rem;
+  color: #172651;
+  font-size: 0.73004rem;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  resize: horizontal;
+}
+.container4 {
+  margin-top: 1.06rem;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  gap: 0.67rem;
+}
+.clicker {
+  width: 0.83333rem;
+  height: 0.83333rem;
+  border-radius: 0.20833rem;
+  border: 2px solid var(--06, #222631);
+  background: var(--05, #fcfdfe);
+}
+.features{
+  display: none;
+}
+.dropmenu{
+  height:max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: -2.4rem;
+  z-index: 100;
+  display: none;
+}
+.db{
+  border: none;
+  border-left: 1.7px solid var(--06, #172651);
+  border-right: 1.7px solid var(--06, #172651);
+  border-bottom: 1.7px solid var(--06, #172651);
+  width: 7.79167rem;
+  height: 1.47913rem;
+  color: #172651;
+  font-size: 0.73004rem;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Mobile Responsive Styles */
+
+@media (max-width: 767px) {
+  .top {
+    margin-top: 1.5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 1rem;
+    width: 7rem;
+    height: auto;
+    background-size: cover;
+  }
+
+  .menu {
+    margin-right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .ib {
+    margin-right: 1rem;
+  }
+
+  .container1 {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 1rem;
+  }
+
+  .container2 {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .heading {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .subheading {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .generate {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .display {
+    margin-top: 1rem;
+    width: 100%;
+    height: 3.5rem;
+    justify-content: center;
+    padding-right: 1rem;
+  }
+
+  .result {
+    font-size: 1rem;
+  }
+
+  .baby {
+    width: 7rem;
+    height: auto;
+    display: none;
+  }
+
+  .menu_bar {
+    left: 0;
+    width: 100%;
+  }
+
+  .menu_items {
+    top: 2rem;
+    left: 1rem;
+  }
+
+  .back {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .settings {
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .option_container {
+    gap: 1rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .adv {
+    margin-top: 1.5rem;
+    flex-direction: column;
+  }
+
+  .name1 {
+    font-size: 0.9rem;
+  }
+
+  .box1 {
+    width: 100%;
+    height: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .txt {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .drop {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+
+  .box2 {
+    width: 100%;
+    height: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .container4 {
+    margin-top: 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .clicker {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .dropmenu {
+    position: absolute;
+    margin-top: -8.7rem;
+  }
+  
+  .db {
+    width: 100%;
+    height: 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* End of Mobile Responsive Styles */
+
+@media (max-width: 767px) {
+  .dropdown-content {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .subheading {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+}
+

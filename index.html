@@ -1,34 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>NameGuru</title>
-</head>
-<body>
-  <div class="top">
-    <img src="./Assets/logo.png" alt="The logo of NameGuru" class="logo">
-    <img src="./Assets/Menu.svg" alt="icon" class="menu">
-  </div>
-  <div class="container1">
-    <div class="tagline">
-      <div class="it">Your Ticket to Naming&nbsp;</div>
-      <div class="st">Nirvana</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <title>NameGuru</title>
+  </head>
+  <body>
+    <div class="top">
+      <img src="./Assets/logo.png" alt="The logo of NameGuru" class="logo" />
+      <button class="ib" id="open">
+        <img src="./Assets/Menu.svg" alt="icon" class="menu" />
+      </button>
     </div>
-    <div class="heading">
-      SAVING PARENTS FROM THE NIGHTMARE OF NAMING THEIR OFFSPRING
+    <div class="container1">
+      <div class="container2">
+        <div class="tagline">
+          <div class="it">Your Ticket to Naming&nbsp;</div>
+          <div class="st">Nirvana</div>
+        </div>
+        <div class="heading">
+          SAVING PARENTS FROM THE NIGHTMARE OF NAMING THEIR OFFSPRING
+        </div>
+        <div class="subheading">
+          Say goodbye to those sleepless nights arguing with your partner over
+          "Cucumber" versus "Pickle" and let NameGuru bring some laughter into
+          your naming adventure. Trust us, your little bundle of joy deserves a
+          name that will make everyone giggle with delight.
+        </div>
+        <div class="features">
+          <div class="adv">
+            <div class="container3">
+              <div class="name1">Set gender</div>
+              <div class="box1">
+                <div class="txt" id="gender">Choose</div>
+                <button class="ib" id="dropdown">
+                  <img src="./Assets/dropdown.svg" alt="" id="drop" />
+                </button>
+              </div>
+            </div>
+            <div class="container3">
+              <div class="name1">Second Name</div>
+              <textarea
+                class="box2"
+                id="secondName"
+                placeholder="secondName"
+              ></textarea>
+            </div>
+          </div>
+          <div class="container4">
+            <button class="clicker"></button>
+            <div class="txt">Middle Name</div>
+          </div>
+          <div class="dropmenu">
+            <button class="db" id="male">Male</button>
+            <button class="db" id="female">Female</button>
+            <button class="db" id="nb">Non-Binary</button>
+          </div>
+        </div>
+        <button class="generate">
+          <img src="./Assets/Gen.svg" alt="icons" class="gen" />
+          Generate
+        </button>
+        <div class="display">
+          <div class="result"></div>
+        </div>
+      </div>
+      <img src="./Assets/baby.png" alt="Baby" class="baby" />
     </div>
-    <div class="subheading">Say goodbye to those sleepless nights arguing with your partner over "Cucumber" versus "Pickle" and let NameGuru bring some laughter into your naming adventure. Trust us, your little bundle of joy deserves a name that will make everyone giggle with delight.</div>
-    <Button class="generate">
-      <img src="./Assets/Gen.svg" alt="icons" class="gen">
-      Generate
-    </Button>
-    <div class="display">
-      <div class="result"></div>
+    <div class="menu_bar">
+      <div class="menu_items">
+        <div class="set_bar">
+          <button class="ib" id="ib">
+            <img src="./Assets/back.svg" alt="backbutton" class="back" />
+          </button>
+          <div class="settings">Settings</div>
+        </div>
+        <div class="option_container">
+          <div class="option">
+            <div class="text">Blue Mode</div>
+            <button id="darkmode" class="ib">
+              <img
+                src="./Assets/Off.svg"
+                alt="checkbox"
+                class="checkbox"
+                id="dm"
+              />
+            </button>
+          </div>
+          <div class="option">
+            <div class="text">Advanced Features</div>
+            <button id="advanced" class="ib">
+              <img
+                src="./Assets/Off.svg"
+                alt="checkbox"
+                class="checkbox"
+                id="af"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <img src="./Assets/baby.png" alt="Baby" class="baby">
-  
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
