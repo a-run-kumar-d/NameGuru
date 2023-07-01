@@ -51,6 +51,8 @@ gen.addEventListener("click", () => {
             }
         }
     }
+    output = chance.name();
+    result.innerHTML = output;
   });
 
 //second Name
